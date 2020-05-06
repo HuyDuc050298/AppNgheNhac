@@ -21,11 +21,35 @@
             android:layout_marginTop="100px"></TextView>
 
         <ImageView
+            android:id="@+id/image_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/image_song"
             android:layout_centerInParent="true">
         </ImageView>
+        <TextView
+            android:id="@+id/current_time_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:32"
+            android:layout_toLeftOf="@id/seek_bar_song"
+            android:layout_below="@id/image_main"
+            android:layout_marginTop="150px"></TextView>
+        <SeekBar
+            android:id="@+id/seek_bar_song"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_main"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="150px"/>
+        <TextView
+            android:id="@+id/time_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:32"
+            android:layout_toRightOf="@id/seek_bar_song"
+            android:layout_below="@id/image_main"
+            android:layout_marginTop="150px"></TextView>
 
         <RelativeLayout
             android:layout_width="match_parent"
